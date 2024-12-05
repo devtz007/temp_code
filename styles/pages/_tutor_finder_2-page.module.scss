@@ -1,0 +1,16 @@
+/*>>>------------------SASS-------------------<<<*\
+tutor_finder_2-page                 
+\*>>>--------------------------------------------<<<*/
+//--- Your Placeholder -------------------------------//
+.filter_container {
+  //background-color: green;
+
+  &__width-wrapper {
+    @include flex-col;
+    gap: 10px;
+  }
+}
+
+.result_container {
+  background-color: var(--white-2) !important;
+}

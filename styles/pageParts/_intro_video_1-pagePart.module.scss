@@ -1,0 +1,45 @@
+/*>>>------------------SASS-------------------<<<*\
+intro_video_1_pagePart (IntroVideo1PagePart)
+\*>>>-----------------------------------------<<<*/
+//--- intro_video_1_pagePart -------------------------------//
+.intro_video_1_pagePart {
+    @include flex-col;
+    gap: 20px;
+    width: 100%;
+
+}
+
+//--- video_preview -------------------------------//
+.video_preview {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+
+    &__play_button {
+        @include flex-jc-ac;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--white-1);
+        cursor: pointer;
+        padding: 20px;
+        border-radius: 50%;
+
+        &__icon_cont {
+            width: 20px;
+        }
+    }
+}
+
+//--- social ---------------------------//
+.social {
+    @include flex-row;
+    gap: 10px;
+
+    &__icon_cont {
+        display: block;
+        width: 2rem;
+    }
+}

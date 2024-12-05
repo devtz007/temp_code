@@ -1,0 +1,22 @@
+/* login_2_page (Login2Page) */
+.login_2_page {
+    @include flex-jc-ac;
+    padding: calc(var(--header-height) + 60px) 0 calc(var(--header-height) + 60px) 0;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    background-color: var(--white-2);
+
+    &__my_container_1 {
+        @include flex-row;
+        gap: 40px;
+        background-color: inherit;
+
+
+        &__image_container_2 {
+            width: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+    }
+}

@@ -1,0 +1,145 @@
+//*******login_2_pagePart (Login2PagePart)*******//
+.login_2_pagePart {
+    @include flex-col;
+    gap: 40px;
+    width: 50%;
+
+    .login {
+        @include flex-col;
+        gap: 20px;
+    }
+
+    .login_by {
+        align-items: center;
+        display: inline-flex;
+        gap: 22px;
+        left: 2px;
+        top: 0;
+
+        &__button {
+            border-radius: 999px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 10px 40px;
+            background-color: var(--pure-white);
+            color: var(--bright-teal);
+
+        }
+
+    }
+
+    .login_with {
+        @include flex-row-jc-ac;
+        gap: 10px;
+        background-color: #f5f5f5;
+        background-color: var(--white-1);
+        border-radius: 99999px;
+        padding: 16px 16px;
+
+        &__icon_cont {
+            width: 1rem;
+        }
+
+        &__text {
+            color: var(--charcoal);
+            font-size: 1rem;
+            font-weight: 500;
+
+        }
+    }
+
+    .form {
+        @include flex-col;
+        gap: 20px;
+    }
+
+    .input_fields {
+        @include flex-col;
+        gap: 20px;
+
+    }
+
+    .input_cont {
+        @include flex-col;
+        gap: 10px;
+
+        &__label {
+            font-size: 1rem;
+            color: var(--black);
+            padding-left: 16px;
+        }
+
+        &__input {
+            padding: 16px;
+            border: 1px solid var(--ash-1);
+            border-radius: 999px;
+            color: var(--black-1);
+            outline: none;
+            font-size: 1rem;
+        }
+    }
+
+    .check_box_cont {
+        @include flex-row-ac;
+        gap: 10px;
+        font-size: 1rem;
+        padding-left: 16px;
+
+        &__check_box {
+            border: 2px solid var(--bright-teal);
+            height: 1rem;
+            width: 1rem;
+        }
+
+        &__text {
+            color: var(--black);
+        }
+    }
+
+    .create_account {
+        width: 100%;
+        background-color: var(--bright-teal);
+        color: var(--white-1);
+        border-radius: 99999999px;
+        padding: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .dont_have_acc {
+        @include flex-jc;
+        font-size: 1rem;
+
+        &__text {
+            color: #262626;
+        }
+
+        &__link {
+            color: #00b9bc;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+
+    .terms_and_privacy {
+        text-align: center;
+
+        &__text {
+            color: #262626;
+
+        }
+
+        &__link {
+
+            color: teal;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+.login_button_active {
+    background-color: var(--bright-teal) !important;
+    color: var(--pure-white) !important;
+}

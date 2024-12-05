@@ -1,0 +1,59 @@
+/*>>>------------------SASS-------------------<<<*\
+home_2-page                
+\*>>>--------------------------------------------<<<*/
+.what_do_want {
+  &__cont {
+    // Styles for the cont block
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+
+    &__poster {
+      // Styles for the bg block within cont
+      background: coral;
+      width: 100%;
+      height: auto;
+      background-image: url('@/assets/media/bg_images/what_do_want_bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+    }
+  }
+}
+
+.find_the_right {
+  // background: green;
+
+  .width_wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% minmax(200px, 60%);
+    grid-template-areas:
+      'signUp_cards_1_pagePart search_bar_3_pagePart'
+      'signUp_cards_1_pagePart person_cards_1_pagePart';
+  }
+
+  &__search_and_link {
+    @include flex-row;
+    gap: 10px;
+
+    &__browse_all {
+      @include flex-jc-ac;
+      padding: 0 20px;
+      border-radius: 99999999px;
+      background-color: #00b9bc;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+  }
+}
+
+.find_mentor {
+  &__width_wrapper {
+    @include flex-jc-ac;
+    padding-top: 80px;
+    border-radius: 8px;
+    background: rgba(164, 212, 208, 1);
+  }
+}

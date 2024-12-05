@@ -1,0 +1,24 @@
+/*Import Styles*/
+@import "../../reusable/sass/_sass_variables_ru.scss";
+@import "../../devtz007_css_sass_library/sass/_mixin_flex_lb";
+
+/*-----------------------------------*\
+search-filter-section
+\*-----------------------------------*/
+
+@mixin search-filter-result-1-section() {
+  .search-filter-result-1-section {
+    background: white;
+    padding: 20px 0;
+    .width-wrapper {
+      @include flex-col;
+      gap: 20px;
+      .cards {
+        @include flex-col;
+        gap: 10px;
+        }
+    }
+  }
+}
+
+@include search-filter-result-1-section();

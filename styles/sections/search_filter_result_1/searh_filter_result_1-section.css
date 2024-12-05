@@ -1,0 +1,137 @@
+/*Import Styles*/
+/*----------------------------------------------*/
+/*----------------------------------------*\
+  search-filter-section
+\*----------------------------------------*/
+/*search-dropdown-filter-2-topics-pagePart*/
+:root {
+  --sadf1p-bgC: transparent;
+  --sadf1p-bC: rgb(220, 220, 229);
+  --sadf1p-h-bC: #140342;
+  --sadf1p-filterName-C: #140342;
+  --sadf1p-filterNameWrap-icon-svg-C: #140342;
+  --sadf1p-outputWrap-input-C: rgb(220, 220, 229);
+  --sadf1p-outPutWrap-button-svg-C: #f5f5f5;
+  --sadf1p-dropDown-bgC: white;
+  --sadf1p-dropDown-bC: rgb(220, 220, 229);
+  --sadf1p-dropDown-bsC: red;
+  --sadf1p-dropDown-mainTitle-C: #140342;
+  --sadf1p-dropDown-groupTitle-C: #140342;
+  --sadf1p-dropDownFilterBtn-bgC: transparent;
+  --sadf1p-dropDownFilterBtn-h-bgC: rgb(220, 220, 229);
+  --sadf1p-dropDownFilterBtn-bC: rgb(220, 220, 229);
+  --sadf1p-dropDownFilterBtn-C: #140342;
+  --ssf1pp-bgC: transparent;
+  --ssf1pp-h-bC: #140342;
+  --ssf1pp-bC: rgb(220, 220, 229);
+  --ssf1pp-thumb-bgC: #140342;
+  --ssf1pp-slider-bgC: #f5f5f5;
+  --ssf1pp-filterName-C: #140342;
+  --ssf1pp-filterName-icon-C: #000000;
+  --ssf1pp-dropDown-mainTitle-C: #140342;
+  --ssf1pp-outputWrap-input-C: rgb(220, 220, 229);
+}
+
+/*-----------------------------------------------*\
+  Header
+\*-----------------------------------------------*/
+/* slogan-sec pagePart*/
+/*search-filter-section*/
+/*-----------------------------------------------*\
+  Footer
+\*-----------------------------------------------*/
+/*-------------------------------------------------*\
+                 flex library code
+\*-------------------------------------------------*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+(************flex column************)
+ \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*-----------------------------*/
+/** justify-content variants*/
+/*-----------------------------*/
+/** align-items variants*/
+/*----------------------------------------*\
+justify-content variants for align-items
+\*----------------------------------------*/
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items=center */
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items=space-between */
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items= space-evenly */
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items= space-around */
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items= flex-start */
+/*-------------------------------------------------------------*/
+/**  justify-content variants for align-items= flex-end */
+/*------------------------------------------------------*\
+align-items variants for justify-content
+\*-----------------------------------------------------*/
+/*---------------------------------------------------*/
+/** align-items variants for justify-content=center*/
+/*--------------------------------------------*/
+/** align-items variants for justify-content= space-between */
+/*--------------------------------------------------------------*/
+/** align-items variants for justify-content= space-evenly */
+/*--------------------------------------------------------------*/
+/** align-items variants for justify-content= space-around */
+/*--------------------------------------------*/
+/**  align-items variants for justify-content=flex-start*/
+/*--------------------------------------------*/
+/**  align-items variants for justify-content= flex-end*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+(************flex row***************)
+ \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*-----------------------------*/
+/** justify-content variants*/
+/*-----------------------------*/
+/** align-items variants*/
+/*----------------------------------------*\
+justify-content variants for align-items
+\*----------------------------------------*/
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items=center */
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items=space-between */
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items= space-evenly */
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items= space-around */
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items= flex-start */
+/*-------------------------------------------------------------*/
+/** justify-content variants for align-items= flex-end */
+/*------------------------------------------------------*\
+align-items variants for justify-content
+\*-----------------------------------------------------*/
+/*---------------------------------------------------*/
+/** align-items variants for justify-content=center*/
+/*--------------------------------------------*/
+/** align-items variants for justify-content= space-between */
+/*--------------------------------------------------------------*/
+/** align-items variants for justify-content= space-evenly */
+/*--------------------------------------------------------------*/
+/** align-items variants for justify-content= space-around */
+/*--------------------------------------------*/
+/** align-items variants for justify-content=flex-start*/
+/*--------------------------------------------*/
+/** align-items variants for justify-content= flex-end*/
+/*************END***************/
+/*-----------------------------------*\
+search-filter-section
+\*-----------------------------------*/
+.search-filter-result-1-section {
+  background: white;
+  padding: 20px 0;
+}
+.search-filter-result-1-section .width-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.search-filter-result-1-section .width-wrapper .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=searh_filter_result_1-section.css.map */

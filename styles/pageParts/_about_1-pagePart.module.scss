@@ -1,0 +1,15 @@
+/*>>>------------------SASS-------------------<<<*\
+about_1_pagePart          
+\*>>>--------------------------------------------<<<*/
+.about_1_pagePart {
+    @include flex-col;
+    gap: 20px;
+    //background: green;
+
+
+    &__button_cont {
+        &__button {
+            color: var(--teal-1)
+        }
+    }
+}

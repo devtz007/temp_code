@@ -1,0 +1,24 @@
+/*>>>------------------SASS-------------------<<<*\
+cta_1_pagePart              
+\*>>>--------------------------------------------<<<*/
+.cta_1-pagePart {
+  @include flex-col-as;
+  gap: 20px;
+  &__text {
+    @include flex-col;
+    gap: 4px;
+  }
+  &__button {
+    padding: 10px 34px;
+    border: 1px solid #00b9bc;
+    border-radius: 99999999px;
+    color: #00b9bc;
+  }
+}
+.text {
+  &__h2 {
+    color: #262626;
+    font-size: 52px;
+    font-weight: bold;
+  }
+}

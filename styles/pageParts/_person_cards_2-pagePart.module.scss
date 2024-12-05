@@ -1,0 +1,196 @@
+/*>>>------------------SASS-------------------<<<*\
+person_cards_2_pagePart (PersonCards2PagePart)
+\*>>>--------------------------------------------<<<*/
+.person_cards_2_pagePart {
+    @include flex-col;
+    gap: 50px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 10px;
+    }
+
+    &__load_more_btn_cont {
+        @include flex-jc;
+
+        &__load_more_btn {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 500;
+            border: 1px solid var(--teal-1);
+            border-radius: 99999999px;
+            padding: 10px 30px;
+            color: var(--teal-1);
+        }
+    }
+
+    &__card {
+        @include flex-col;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 7px;
+        background-color: white;
+        border: 1px solid rgb(236, 236, 236);
+    }
+}
+
+.frame25 {
+    @include flex-row;
+    gap: 20px;
+
+    &__rectangle1 {
+        min-width: 140px;
+        height: 140px;
+        border-radius: 7px;
+        // background-color: #c91111;
+        overflow: hidden;
+
+        img {
+            @extend %width-height-100;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__frame24 {
+        @include flex-col;
+        gap: 4px;
+
+        &__frame23 {
+            @include flex-row-ac;
+            gap: 4px;
+
+            &__tutor_name {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--black-1);
+            }
+
+            &__materialSymbolsLightVerified {
+                width: 1.2rem;
+            }
+        }
+
+        &__frame19 {
+            @include flex-row-ac;
+            gap: 4px;
+
+            &__gameIconsGraduateCap {
+                width: 1.2rem;
+
+            }
+
+            &__frenchTutor {
+                color: #636363;
+                font-size: 1rem;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+        }
+
+        &__about_tutor {
+            color: var(--black-2);
+            font-size: 1rem;
+        }
+    }
+}
+
+.frame26 {
+    @include flex-row;
+    gap: 10px;
+
+    &__frame1 {
+        @include flex-row-ac;
+        gap: 4px;
+
+        &__solarStarBold {
+            width: 1rem;
+            margin-bottom: 2px;
+        }
+    }
+
+    &__frame22 {
+        @include flex-row;
+        gap: 10px;
+
+        &__frame12 {
+            padding: 3px 10px;
+            border-radius: 80px;
+            background-color: #ececec;
+            white-space: nowrap;
+
+            &__googleCloud {
+                color: #636363;
+                font-size: 12px;
+                font-weight: 500;
+                width: 76px;
+                height: 18px;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.actions {
+    @include flex-row-jsb;
+
+}
+
+.total_active_students {
+    @include flex-row;
+    gap: 6px;
+
+    &__svg_cont {
+        width: 24px;
+        height: auto;
+    }
+
+    &__group_1 {
+        @include flex-col;
+    }
+
+    &__label {
+        color: var(--ash-2);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &__counts {
+        color: var(--ash-2);
+        font-size: 1rem;
+    }
+}
+
+.action_btn {
+    @include flex-row-jc-ac;
+    gap: 10px;
+    padding: 0 20px;
+    background-color: var(--teal-1);
+    border: 1px solid var(--ash-1);
+    border-radius: 9999999px;
+
+    &__label {
+        color: var(--white-1);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    &__svg_cont {
+        width: 20px;
+        height: auto;
+    }
+}
+
+.action_btn_2 {
+    background-color: var(--white-2);
+
+    &__label {
+        color: var(--black-2);
+
+    }
+}
+
+.add_to_fav {
+    background-color: transparent;
+}

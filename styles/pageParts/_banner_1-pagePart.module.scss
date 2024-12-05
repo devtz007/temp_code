@@ -1,0 +1,12 @@
+/*>>>------------------SASS-------------------<<<*\
+banner_1-pagePart            
+\*>>>--------------------------------------------<<<*/
+.banner_1-pagePart {
+  @include flex-row-jsb;
+  gap: 20px;
+  width: 100%;
+  padding: 50px 0;
+  &__bg_2_svg_cont {
+    width: 400px;
+  }
+}

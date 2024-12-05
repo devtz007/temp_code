@@ -1,0 +1,46 @@
+/*>>>------------------SASS-------------------<<<*\
+Your Placeholder                 
+\*>>>--------------------------------------------<<<*/
+.counter_1_pagePart {
+  position: relative;
+  z-index: 1;
+  @include flex-row;
+  gap: 10px;
+  outline: solid 1px #e3e7ea;
+  outline-offset: -1px;
+  border-radius: 8px;
+  padding: 20px;
+  background: #ffffff;
+  //background: green;
+
+  &:before {
+    position: absolute;
+    top: calc(100% - 20px);
+    left: -20px;
+    z-index: -1;
+    //transform: translateX();
+    width: calc(100% + 40px);
+    height: 40px;
+    border-radius: 8px;
+    background: green;
+    background: rgba(227, 231, 234, 1);
+  }
+  &__item {
+    @include flex-col-jc-ac;
+    width: 25%;
+    padding: 0px 30px;
+    border-right: 1px solid #e3e7ea;
+    outline-offset: -1px;
+    &__count {
+      color: #262626;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    &__label {
+      color: #262626;
+      font-size: 1rem;
+    }
+  }
+  &__bg {
+  }
+}

@@ -1,0 +1,36 @@
+/*>>>------------------SASS-------------------<<<*\
+latest_review_1_pagePart               
+\*>>>--------------------------------------------<<<*/
+.latest_review_1_pagePart {
+  position: relative;
+  height: 218px;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 50px 0;
+  &__rectangle2 {
+    position: absolute;
+    left: 1010px;
+    top: 10px;
+    width: 222px;
+    height: 217px;
+    background-image: linear-gradient(90.9deg, #edf3f612 16%, #edf3f6ff 73%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  &__rectangle22 {
+    transform-origin: top left;
+    position: absolute;
+    left: 195px;
+    top: 218px;
+    width: 222px;
+    height: 217px;
+    background-image: linear-gradient(90.9deg, #edf3f612 16%, #edf3f6ff 73%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+  }
+}

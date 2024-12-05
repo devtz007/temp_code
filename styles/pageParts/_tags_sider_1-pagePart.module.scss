@@ -1,0 +1,58 @@
+/*>>>------------------SASS-------------------<<<*\
+tags_1_pagePart               
+\*>>>--------------------------------------------<<<*/
+.tags_slider_1_pagePart {
+
+    &__slider {
+        @include flex-row-jc-ac;
+    }
+
+    &__slideContainer {
+        width: 100%;
+        //background-color: green;
+        @include flex-row-jc;
+        gap: 10px;
+
+        &__slide {
+            padding: 4px 20px;
+            border: 1px solid var(--ash-1);
+            border-radius: 999999999px;
+            background-color: var(--white-3);
+            color: var(--ash-2);
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: var(--white-1);
+            }
+
+            &.selected {
+                background-color: var(--teal-1);
+                color: var(--white-1);
+            }
+        }
+    }
+
+    &__arrowRight {
+        @include flex-jc-ac;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        border: 1px solid var(--ash-1);
+        border-radius: 100%;
+        background-color: var(--white-1);
+    }
+
+    &__arrowLeft {
+        @include flex-jc-ac;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        border: 1px solid var(--ash-1);
+        border-radius: 100%;
+        background-color: var(--white-1);
+    }
+
+    &__selectedItems {
+        display: none;
+    }
+}

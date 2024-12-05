@@ -1,0 +1,14 @@
+/*import sass */
+@import "../../reusable/sass/_sass_variables_ru.scss";
+@import "../../devtz007_css_sass_library/sass/_mixin_flex_lb";
+  
+/*-------------------------*\
+   login-1-section
+\*-------------------------*/
+@mixin login-1-section() {
+  .login-1-section {
+    @include flex-jc-ac;
+    height: 100%;
+  }
+}
+@include login-1-section;

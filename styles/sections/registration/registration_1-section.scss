@@ -1,0 +1,14 @@
+/*import sass */
+@import "../../reusable/sass/_sass_variables_ru.scss";
+@import "../../devtz007_css_sass_library/sass/_mixin_flex_lb";
+
+/*-------------------------*\
+   registration-1-section
+\*-------------------------*/
+@mixin registration-1-section() {
+  .registration-1-section {
+    @include flex-jc-ac;
+    padding: 100px 0;
+  }
+}
+@include registration-1-section;

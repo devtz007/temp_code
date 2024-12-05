@@ -1,0 +1,98 @@
+/*>>>------------------SASS-------------------<<<*\
+intro_home_2_pagePart              
+\*>>>--------------------------------------------<<<*/
+.intro_home_2_pagePart {
+  @include flex-col-jc-ac;
+  position: relative;
+  z-index: 0;
+  gap: 20px;
+  width: 100%;
+  padding: calc(var(--header-height) + 60px) 0 50px 0;
+  background-color: #EDF3F6;
+
+  &:before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 80%;
+    content: '';
+    z-index: -1;
+    background-image: url('/src/assets/media/bg_images/intro_bg.svg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+  }
+}
+.main_heading {
+  width: 644px;
+  height: min-content;
+  flex-direction: column;
+  gap: 13px;
+  &__everyoneNeedsAMentor {
+    height: min-content;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    &__labelWrapper {
+      font-size: 52px;
+      font-family:
+        Manrope,
+        system-ui,
+        -apple-system,
+        'Segoe UI',
+        Roboto,
+        'Helvetica Neue',
+        Arial,
+        'Noto Sans',
+        'Liberation Sans',
+        sans-serif;
+      flex-shrink: 1;
+      &__label {
+        color: #262626;
+        font-size: 52px;
+        font-weight: bold;
+      }
+      &__label2 {
+        color: #00b9bc;
+        font-size: 52px;
+        font-weight: bold;
+        font-family:
+          Manrope,
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          'Noto Sans',
+          'Liberation Sans',
+          sans-serif;
+      }
+    }
+  }
+  &__searchAmazingIndividualsAround {
+    color: #3d4346;
+    font-size: 18px;
+    line-height: 28px;
+    font-family:
+      Manrope,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      'Liberation Sans',
+      sans-serif;
+    height: min-content;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

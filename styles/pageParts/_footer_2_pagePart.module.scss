@@ -1,0 +1,55 @@
+/*>>>------------------SASS-------------------<<<*\
+footer_2-pagepart           
+\*>>>--------------------------------------------<<<*/
+.footer_2_pagePart {
+  @include flex-col-jc-ac;
+  background: rgba(237, 243, 246, 1);
+  .width_wrapper {
+    @include flex-row-jsb;
+    padding: 100px 0 100px 0;
+  }
+  .footer_logo {
+    @include flex-col;
+    gap: 20px;
+    &__icon_cont {
+      width: 150px;
+    }
+    &__slogan {
+      @include flex-col;
+      gap: 4px;
+      font-size: 0.8rem;
+      color: #6d6d6d;
+    }
+  }
+  .footer_menus_container {
+    @include flex-row;
+    gap: 40px;
+  }
+  .footer_menus {
+    @include flex-col;
+    gap: 10px;
+    //background: green;
+    &__ul {
+      @include flex-col;
+      gap: 4px;
+    }
+    &__heading {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    &__item_li {
+      &__a {
+        color: #6d6d6d;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .copy_right {
+    width: 100%;
+    padding: 10px 0;
+    color: #6d6d6d;
+    font-size: 0.8rem;
+    background: white;
+    text-align: center;
+  }
+}

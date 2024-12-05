@@ -1,0 +1,129 @@
+/*>>>------------------SASS-------------------<<<*\
+dropdown_filter_2_topics-pagePart
+\*>>>--------------------------------------------<<<*/
+//---Common filter style that is shared----------------//
+%filter-common-style {
+  font-size: 1em;
+  padding: 6px;
+  height: 100%;
+  border: 1px solid transparent;
+}
+
+//---CSS class for rotating an element 180 degrees----------------//
+.rotated {
+  transform: rotate(180deg);
+}
+
+//---CSS class for the dropdown filter component container---------//
+.dropDownFilter2TopicsPagePart {
+  display: inline-block;
+  background-color: var(--white-1); // Background color from variables
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid var(--ash-1); // Border color from variables
+  border-radius: 4px;
+  position: relative;
+  transition: border 0.2s ease-in-out; // Smooth border transition on hover
+
+  //---Hover effect for dropdown filter-----------------------------//
+  &:hover {
+    border: 1px solid var(--teal-1); // Hover border color from variables
+  }
+
+  //---CSS class for wrapping the filter name-----------------------//
+  .filterNameWrap {
+    display: flex;
+    justify-content: space-between; // Space between the filter name and icon
+
+    //---CSS class for the filter name-----------------------------//
+    .filterName {
+      font-size: 0.9em;
+      color: var(--ash-2); // Filter name color from variables
+    }
+
+    //---CSS class for the filter icon------------------------------//
+    .icon {
+      width: 16px;
+      height: 16px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          fill: var(--ash-2); // Icon color from variables
+        }
+      }
+    }
+  }
+
+  //---CSS class for the search wrapper-----------------------------//
+  .searchWrap {
+    position: relative;
+    z-index: 0;
+    gap: 6px; // Space between elements inside the wrapper
+    margin-top: 8px; // Space above the search bar
+
+    //---Input element inside the search wrapper-------------------//
+    input {
+      @extend %filter-common-style; // Extending the common filter style
+      width: 100%; // Full width of the input
+      outline: none;
+      border: 1px solid var(--ash-1); // Input border color from variables
+      border-radius: 4px;
+      overflow: hidden; // Hide overflow to prevent text spill
+      color: var(--black-1);
+    }
+  }
+
+  //---CSS class for the dropdown list container-------------------//
+  .dropDown {
+    display: block;
+    position: absolute;
+    top: calc(100% + 4px); // Position below the search filter
+    left: 0;
+    width: 100%; // Full width of the dropdown
+    border: 1px solid var(--ash-1); // Dropdown border color from variables
+    border-radius: 4px;
+    padding: 10px;
+    overflow: hidden; // Hide overflow for cleaner look
+    background: var(--white-1); // Dropdown background color from variables
+    box-shadow: var(--box-shadow-1); // Add shadow for depth effect
+    z-index: 1; // Ensure dropdown appears on top
+
+    //---Hide scrollbar for Firefox----------------------------------//
+    scrollbar-width: none;
+
+    //---Hide scrollbar for WebKit-based browsers--------------------//
+    ::-webkit-scrollbar {
+      display: none; // Remove scrollbar for cleaner UI
+    }
+
+    //---Unordered list inside the dropdown-------------------------//
+    ul {
+      @include flex-col;
+      gap: 10px;
+      overflow-y: scroll; // Scrollable content
+
+      //---List items inside the dropdown---------------------------//
+      li {
+
+        //---Button inside list items------------------------------//
+        button {
+          border-radius: 4px;
+          padding: 10px;
+          background-color: var(--white-1);
+          color: var(--ash-2); // List item text color from variables
+          width: 100%; // Full width for button
+          text-align: left; // Align text to the left
+
+          //---Hover effect for dropdown items---------------------//
+          &:hover {
+            color: var(--teal-1);
+            background-color: var(--ash-1); // Background color on hover from variables
+          }
+        }
+      }
+    }
+  }
+}

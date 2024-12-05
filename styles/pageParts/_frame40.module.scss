@@ -1,0 +1,68 @@
+.root {
+  position: relative;
+  height: 82px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 11px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.englishTutors {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 600;
+  font-family:
+    Manrope,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    'Liberation Sans',
+    sans-serif;
+  position: absolute;
+  left: 21px;
+  top: 16px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+._434340Teachers {
+  color: #616161;
+  font-size: 15px;
+  font-family:
+    Manrope,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    'Liberation Sans',
+    sans-serif;
+  position: absolute;
+  left: 21px;
+  top: 47px;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.iconParkDown {
+  position: absolute;
+  left: 254px;
+  top: calc(50% - 24.5px);
+  width: 27px;
+  height: 27px;
+  transform: translateY(-50%);
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+}

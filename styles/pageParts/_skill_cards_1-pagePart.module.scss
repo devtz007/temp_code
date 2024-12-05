@@ -1,0 +1,98 @@
+.skill_cards_1_pagePart {
+  @include flex-col;
+  gap: 40px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #e7f7f9eb;
+  //background-image:/* webpackIgnore: true */ url('assets/frame39.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 20px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  &__btn_cont {
+    @include flex-jc;
+    &__btn {
+      padding: 10px 40px;
+      outline: solid 1px #00b9bc;
+      outline-offset: -1px;
+      border-radius: 9999999px;
+      color: #00b9bc;
+      font-size: 1rem;
+      background: transparent;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  height: 82px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 11px;
+  background-color: #fff;
+  overflow: hidden;
+  &__skill_name {
+    color: #262626;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:
+      Manrope,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      'Liberation Sans',
+      sans-serif;
+    position: absolute;
+    left: 21px;
+    top: 16px;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    flex-direction: column;
+  }
+  &__count {
+    color: #616161;
+    font-size: 15px;
+    font-family:
+      Manrope,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      'Liberation Sans',
+      sans-serif;
+    position: absolute;
+    left: 21px;
+    top: 47px;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+  }
+  &__icon_cont {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    &__icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

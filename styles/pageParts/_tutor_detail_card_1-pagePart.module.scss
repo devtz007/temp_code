@@ -1,0 +1,88 @@
+// Main container for the tutor detail card, organized as a column layout with a specified gap
+.tutor_detail_card_1_pagePart {
+    @include flex-col;
+    gap: 20px;
+}
+
+// Profile image section with a grid layout for image, name, type, and designation
+.profile_image {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-areas:
+        "image_cont name"
+        "image_cont type"
+        "designation designation";
+    gap: 20px;
+    white-space: nowrap;
+
+    // Container for the profile image, with specific dimensions and rounded corners
+    &__image_cont {
+        grid-area: image_cont;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    // Name section with an inline-flex layout for the name text and icon(s)
+    &__name {
+        @include flex-row-ac;
+        gap: 10px;
+        grid-area: name;
+
+        &__heading {
+            color: var(--black-2);
+        }
+
+        &__svg_cont {
+            width: 1rem; // Width for SVG icons in the name section
+        }
+    }
+
+    // Type label section for displaying additional information such as occupation
+    &__type {
+        @include flex-row-ac;
+        gap: 10px;
+        grid-area: type;
+        color: var(--black-1);
+    }
+
+    // Designation text styling, such as job title
+    &__designation {
+        grid-area: designation;
+        font-size: 1rem;
+        color: var(--teal-1);
+    }
+}
+
+// Skills section styled as a column with gap for each skill item
+.skills {
+    @include flex-col;
+    gap: 10px;
+}
+
+// First and second  button group, styled as a row with space between each button
+.button_group_1,
+.button_group_2 {
+    @include flex-row-ac;
+    gap: 20px;
+}
+
+.button_group_2 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--ash-1);
+}
+
+
+.navigation {
+    @include flex-col;
+    gap: 40px;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid var(--ash-1);
+}
+
+.navigation__result {
+    &__cv {
+        color: var(--teal-1);
+    }
+}

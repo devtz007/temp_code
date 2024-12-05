@@ -1,0 +1,49 @@
+.frame15__frame12 {
+  position: relative;
+  min-width: 385px;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  outline: solid 1px #e9f4fa;
+  outline-offset: -1px;
+  border-radius: 35px;
+  background-color: #fff;
+  overflow: hidden;
+  grid-area: search_bar_3_pagePart;
+  &__frame13 {
+    position: absolute;
+    right: 4px; 
+    top: 4px;
+    width: 68px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 110px;
+    background-color: rgb(218, 247, 248);
+    overflow: hidden;
+
+    &__flowbiteSearchOutline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  &__search {
+    color: #8498a1;
+    font-size: 16px;
+    padding-left: 19px;
+    width: calc(
+      100% - 68px
+    ); 
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,22 @@
+/*Import Styles*/
+@import "../../reusable/sass/_sass_variables_ru.scss";
+@import "../../devtz007_css_sass_library/sass/_mixin_flex_lb";
+
+/*-----------------------------------*\
+search-filter-section
+\*-----------------------------------*/
+
+@mixin search-filter-section() {
+
+  .search-filter-section {
+    background: transparent;
+    padding: 20px 0;
+    .width-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+  }
+}
+
+@include search-filter-section();

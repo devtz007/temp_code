@@ -1,0 +1,20 @@
+/*>>>------------------SASS-------------------<<<*\
+tags_1_pagePart               
+\*>>>--------------------------------------------<<<*/
+.tags_1_pagePart {
+  @include flex-row-jc;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__tag {
+    padding: 8px 14px;
+    outline: solid 1px #e7e7e7;
+    outline-offset: -1px;
+    border-radius: 99999999px;
+    background-color: var(--white-1);
+    color: var(--black-1);
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
